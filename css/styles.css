@@ -1,3 +1,7 @@
+*{
+    margin: 0;
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -13,20 +17,41 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
+    height: 100px;
 }
 
-.container{
+/*Utilitis*/
+
+.carousel-item img{
+    width: 100%; 
+    height: 900px;
+    object-fit: cover;
+}
+
+.container-menu{
     margin: 0 auto;
-    width: 1200px;
-    border: solid 1px red;
+    width: 1400px;
     display: flex;
     justify-content: space-between;
-    
+    align-items: center;
+    border: solid 1px red;
+}
+
+.logo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .logo h1 {
     margin: 0;
+    padding: 0;
+    margin-left: 20px;
     border: solid 1px red;
+}
+
+.logo img{
+    max-width: 90px;
 }
 
 .nav-menu {
@@ -34,12 +59,20 @@ header {
     padding: 0;
     display: flex;
     border: solid 1px red;
-    margin: 0;
+    align-items: center;
 
 }
 
 .nav-menu li {
     margin-left: 20px;
+    
+}
+
+.nav-menu ul{
+    margin: 0;
+} 
+
+ul.nav-menu{
     margin: 0;
 }
 
@@ -47,8 +80,10 @@ header {
     color: white;
     text-decoration: none;
     transition: color 0.3s;
+    font-size: 20px;
 }
 
 .nav-menu a:hover {
-    color: #FFD700;
+    color: #c4dafa;
 }
+
