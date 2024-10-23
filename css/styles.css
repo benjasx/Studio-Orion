@@ -1,15 +1,14 @@
-*{
+* {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Asegura que el padding y el border no aumenten el tamaño total */
 }
 
 body {
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
 }
 
-
-
+/* Estilo del header */
 header {
     background-color: #020D23;
     color: white;
@@ -20,20 +19,18 @@ header {
     height: 120px;
 }
 
-/*Utilitis*/
-
-
-
-.container-menu{
+/* Contenedor del menú */
+.container-menu {
     margin: 0 auto;
     width: 1400px;
-    max-width: 1400px;
+    max-width: 100%; /* Cambiado a 100% para ser responsivo */
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.logo{
+/* Estilo del logo */
+.logo {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -45,29 +42,20 @@ header {
     margin-left: 20px;
 }
 
-.logo img{
+.logo img {
     max-width: 90px;
 }
 
+/* Estilo del menú */
 .nav-menu {
     list-style: none;
     padding: 0;
     display: flex;
     align-items: center;
-
 }
 
 .nav-menu li {
     margin-left: 20px;
-    
-}
-
-.nav-menu ul{
-    margin: 0;
-} 
-
-ul.nav-menu{
-    margin: 0;
 }
 
 .nav-menu a {
@@ -81,8 +69,77 @@ ul.nav-menu{
     color: #c4dafa;
 }
 
-
-
-.carousel-item img{
+/* Carousel */
+.carousel-item img {
     width: 100%; 
+    height: 500px;
+}
+
+/* Media Queries para responsividad */
+
+/* Móviles (<576px) */
+@media (max-width: 575.98px) {
+    header {
+        flex-direction: column; /* Cambia a columna */
+        align-items: flex-start; /* Alinea a la izquierda */
+        height: auto; /* Ajusta la altura */
+    }
+
+    .til-h{
+        display: none;
+    }
+    ul.nav-menu{
+        width: 100%;
+    }
+
+    .container-menu {
+        flex-direction: column; /* Cambiar a columna */
+        width: 100%; /* Ancho completo */
+    }
+
+    .nav-menu {
+        flex-direction: column; /* Menú en columna */
+        align-items: flex-start; /* Alineación */
+    }
+
+    .nav-menu li {
+        margin: 10px 0; /* Espaciado vertical */
+        display: block;
+        text-align: center;
+        width: 100%;
+    }
+
+}
+
+/* Tabletas (576px a 768px) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    body {
+        font-size: 15px; /* Ajusta el tamaño de la fuente */
+    }
+    
+    .container-menu {
+        padding: 10px; /* Ajusta el padding */
+    }
+}
+
+/* Pantallas medianas (768px a 992px) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .nav-menu {
+        justify-content: center; /* Centra el menú */
+    }
+}
+
+/* Pantallas grandes (992px a 1200px) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .container-menu {
+        max-width: 90%; /* Ajustar el ancho del contenedor */
+    }
+}
+
+/* Pantallas extra grandes (≥1200px) */
+@media (min-width: 1200px) {
+    .container-menu {
+        max-width: 1200px; /* Ancho máximo para pantallas grandes */
+        margin: 0 auto; /* Centra el contenedor */
+    }
 }
