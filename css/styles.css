@@ -81,9 +81,7 @@ ul.nav-menu{
     color: #c4dafa;
 }
 
-.carousel-inner {
-    height: 900px; /* Mismo valor que la altura de las imágenes */
-}
+
 
 .carousel-item img{
     width: 100%; 
