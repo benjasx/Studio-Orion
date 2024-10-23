@@ -82,7 +82,7 @@ ul.nav-menu{
 }
 
 .carousel-inner {
-    height: 800px; /* Mismo valor que la altura de las imágenes */
+    height: 900px; /* Mismo valor que la altura de las imágenes */
 }
 
 .carousel-item img{
