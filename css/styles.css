@@ -21,6 +21,7 @@ header {
     border: solid 1px red;
     display: flex;
     justify-content: space-between;
+    
 }
 
 .logo h1 {
