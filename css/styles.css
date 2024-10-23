@@ -74,6 +74,7 @@ header {
     width: 100%; 
 }
 
+
 /* Media Queries para responsividad */
 
 /* Móviles (<576px) */
@@ -117,11 +118,6 @@ header {
         width: 100%;
     }
 
-    /* Carousel */
-    .carousel-item img {
-        width: 100%; 
-        height: 500px;
-    }
 
 }
 
@@ -152,8 +148,10 @@ header {
 
 /* Pantallas extra grandes (≥1200px) */
 @media (min-width: 1200px) {
-    .container-menu {
-        max-width: 1200px; /* Ancho máximo para pantallas grandes */
-        margin: 0 auto; /* Centra el contenedor */
+    .simg1 {
+        background-image: url('../Image/Slider/Slider1.png');
+        width: 100%;
+        height: 800px;
     }
+
 }
